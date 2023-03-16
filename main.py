@@ -10,7 +10,7 @@ def parallel_processing(n, m, data):
         start_time = times[worker_index]
         times[worker_index] += data[i]
         output_pairs.append((worker_index, start_time))
-        
+
     return output_pairs
 
 def main():
@@ -38,7 +38,7 @@ def main():
     
     # TODO: print out the results, each pair in it's own line
     for i, j in result:
-        print(i, p)
+        print(i, j)
 
 
 if __name__ == "__main__":
